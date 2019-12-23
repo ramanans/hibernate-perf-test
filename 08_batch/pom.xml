@@ -6,11 +6,22 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 
+		<!-- 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>4.3.10.Final</version>
 		</dependency>
+		 -->
+
+		 <!--
+			<dependency>
+			    <groupId>com.h2database</groupId>
+			    <artifactId>h2</artifactId>
+			    <version>1.4.198</version>
+			</dependency>
+		-->
+		
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -18,15 +29,15 @@
 		</dependency>
 
 <!-- Uncomment for using new version-->
-<!--
+
  		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.4.2.Final</version>
-			<scope>provided</scope>
+			<!--  <version>6.0.0.Alpha4</version> -->
 		</dependency>
 
- -->
+ 
 
 
 	</dependencies>

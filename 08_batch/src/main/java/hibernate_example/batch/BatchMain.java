@@ -13,9 +13,9 @@ public class BatchMain {
     public static void main(String[] args) {
         final Configuration configuration = new Configuration().configure();
         final StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
-        ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(
-                configuration.getProperties()).build();
-        sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+        //ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(
+        //        configuration.getProperties()).build();
+        sessionFactory = configuration.buildSessionFactory();//serviceRegistry);
         final Session session = sessionFactory.openSession();
         long startmillis = System.currentTimeMillis();
         try {
